@@ -7,7 +7,7 @@ import Vector2 from '../../assets/image/Vector2.png'
 import Image from 'next/image'
 import FloatingDiv from './FloatingDiv'
 import Github from '../../assets/image/github.png'
-import Linkedin from '../../assets/image/linkedin.png'
+// import Linkedin from '../../assets/image/linkedin.png'
 import crown from '../../assets/image/crown.png'
 import { motion } from 'framer-motion'
 const Intro = () => {
@@ -24,7 +24,7 @@ const Intro = () => {
         </button>
         <div className='flex gap-9 relative top-20'>
           <Image width={70} height={50}  src={Github} alt='' />
-          <Image width={70} height={50}  src={Linkedin} alt='' />
+          {/* <Image width={70} height={50}  src={Linkedin} alt='' /> */}
 
         </div>
       </div>
