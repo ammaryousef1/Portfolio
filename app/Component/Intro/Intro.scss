@@ -1,0 +1,127 @@
+
+.intro {
+    display: flex;
+    height: 77vh;
+    margin-top: 6rem;
+
+    .i-left {
+        display: flex; 
+        position: relative;
+        flex: 1;
+        flex-direction: column;
+        gap: 2rem;
+
+        .i-name {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .i-name>:nth-child(1) {
+            // color: $black;
+            font-weight: bold;
+            font-size: 3rem;
+       }
+
+       .i-name>:nth-child(2) {
+        // color: $yellow;
+        font-weight: bold;
+        font-size: 3rem;
+       }
+
+        .i-name>:nth-child(3) {
+            font-weight: 600;
+            font-size: 14px;
+            // color: $gray;
+            margin-top: 10px;
+            line-height: 1rem;
+
+        }
+
+       
+
+
+        .i-icons  {
+            margin-top: 3rem;
+            display: flex;
+            gap: 0rem;
+
+        }
+
+        .i-icons > * {
+            transform: scale(0.5);
+        }
+        .i-icons > *:hover {
+            cursor: pointer;
+        }
+   }
+   
+   .i-button {
+    width: 6rem;
+    height: 2rem;
+   }
+
+   .i-right {
+    flex: 1;
+    position: relative;
+   }
+   .i-right>* {
+    position: absolute;
+    z-index: 1; 
+   }
+
+   .i-right>:nth-child(1) {
+    transform: scale(0.69);
+    left: -15%;
+    top: -9%;
+    width: 800px;
+   }
+   .i-right>:nth-child(2) {
+    top: -11.6%;
+    transform: scale(0.67);
+    left: -3rem; 
+    width: 800px;
+   }
+
+   .i-right>:nth-child(3) {
+    top: 47px;
+    transform: scale(1.4);
+    left:28%;
+   }
+}
+
+
+.i-button a {
+    // color: $black;
+    font-weight: bold;
+}
+
+.emoge {
+    transform: scale(0.52);
+    top: -19%;
+    left: -24%;
+    border-radius: 50%;
+    padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .intro {
+        flex-direction: column;
+        height: 64rem;
+        gap:7rem;
+    }
+
+    .i-right {
+        transform: scale(0.8);
+        left: -3rem;
+    }
+    .i-right .blue { 
+        display: none;
+    }
+
+    .floating-div:nth-of-type(1) {
+        top: -7rem !important;
+
+
+    }
+}
+
