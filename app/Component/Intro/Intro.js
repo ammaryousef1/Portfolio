@@ -7,7 +7,7 @@ import Vector2 from '../../assets/image/Vector2.png'
 import Image from 'next/image'
 import FloatingDiv from './FloatingDiv'
 import Github from '../../assets/image/github.png'
-import Linkedin from '../../assets/image/Linkedin.png'
+import Linkedin from '../../assets/image/linkedin.png'
 import crown from '../../assets/image/crown.png'
 import { motion } from 'framer-motion'
 const Intro = () => {
@@ -32,9 +32,8 @@ const Intro = () => {
         <motion.div
           animate={{ x:50}}
           transition={{type: 'tween'  ,duration: 1}}
-          style={{top:'-4%' , right: '50%'}}
         >
-        <Image  className='w-[110px] h-[110px]' src={glassesimoji} alt='' />
+        <Image  className='w-[120px] h-[120px] relative bottom-[60px]' src={glassesimoji} alt='' />
         </motion.div>
         <div className='absolute'>
         <Image className='relative top-20px w-[700px]' src={Vector1} alt='' />
