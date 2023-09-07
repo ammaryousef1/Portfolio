@@ -29,3 +29,16 @@ body {
 body {
   color: black;
 }
+
+.blur {
+  position: absolute;
+  width: 22rem;
+  z-index: -10;
+  height: 14rem;
+  border-radius: 50%;
+  background: hsl(228, 88%, 61%);
+  filter: blur(300px);
+
+  top: -18%;
+  left: 56%;
+}
