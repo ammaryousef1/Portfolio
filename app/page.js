@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Intro from './Component/Intro/Intro'
 import Skills from './Component/skills/Skills'
 import Projects from './Component/Projects'
+import Contact from './Component/Contact/Contact'
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Intro />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   )
 }
