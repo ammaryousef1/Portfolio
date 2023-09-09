@@ -12,6 +12,7 @@ import thumbup from '../../assets/image/thumbup.png'
 import glassesimoji from '../../assets/image/glassesimoji.png'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const Intro = () => {
 
@@ -26,9 +27,13 @@ const Intro = () => {
                 <span className='text-gray'>Frontend Developer With level of experience in web designing and development producting the Quality work</span>
             </div>
             <button 
-             className='w-32 p-3 font-semibold text-white rounded-full shadow-lg bg-yellow px-7 shadow-orange'><a href="/contact" style={{ position: 'relative' , bottom: '3px'}} >Hire me</a></button>
+             className='w-32 p-3 font-semibold text-white rounded-full shadow-lg bg-yellow px-7 shadow-orange'>
+                <Link href="/contact" >
+                    Hire me
+                </Link>
+             </button>
             <div className="i-icons">
-                <a href=''>
+                <a href='https://github.com/ammaryousef1' target='_blank'>
                    <Image src={github} alt='' />
                 </a>
                 <a href='https://www.linkedin.com/in/ammar-yousef-559b51283/' target='__blank' >

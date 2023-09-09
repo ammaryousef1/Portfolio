@@ -1,22 +1,21 @@
 'use client'
 import React from 'react'
-import './Contact.scss'
+import Contact from '../Component/Contact/Contact'
 import { useForm, ValidationError } from '@formspree/react';
-
-const Contact = () => {
- 
+const page = () => {
   const [state, handleSubmit] = useForm("xvojgzen");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>
+      return <p>Thanks for joining!</p>;
   }
   return (
-    <div style={{justifyContent: 'space-evenly'}} className='relative top-[1200px] flex  items-start contact'>
+    <>
+    <div style={{justifyContent: 'space-evenly'}} className='relative top-[150px] flex  items-start contact'>
       <div className='contact-title'>
         <h1 className='text-[55px] m-0 font-semibold text-black'>Get in Touch</h1>
         <br />
         <span className='text-[55px] m-0 font-semibold text-yellow' >Contact me</span>
       </div>
-      <div className='blur'  
+      <div className='blur'
       style={{top: '20px'}}></div>
       <form className='flex flex-col items-center justify-center ' action='https://formspree.io/f/xvojgzen' method="POST" onSubmit={handleSubmit}>
      <input className='w-[400px] border-[3px] border-yellow rounded-lg bg-white p-5 max-w-lg mb-10 ' id="name" type="name"  name="name" placeholder='Name' />
@@ -32,9 +31,14 @@ const Contact = () => {
         Send
       </button>
     </form>
-    <div  className='blur-bottom' ></div>
+     <div  className='blur-bottom' ></div>
    </div>
-  );
+   
+   <div className='text-center text-black relative top-[310px] '>
+       ammaryousef175@gmail.com
+   </div>
+    </>
+  )
 }
- 
-export default Contact
+
+export default page
