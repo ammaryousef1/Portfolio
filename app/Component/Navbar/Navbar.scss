@@ -1,0 +1,85 @@
+// @import '../index.scss';
+.n-wrapper {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.n-left {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap:2rem;
+}
+
+.n-name {
+    // color: $black;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.n-right {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+        font-weight: 400;
+
+
+    .n-list {
+        flex: 10;
+
+        ul {
+            display: flex;
+            gap: 100px;
+            margin-right: 2rem; 
+            list-style-type: none;
+        }
+
+        li  {
+            font-size: 18px;
+            font-weight: bold;
+        
+        }
+
+        a {
+            cursor: pointer;
+            // color: $black;
+        }
+        a:hover {
+            cursor: pointer;
+            // color: $orange;
+        }
+
+     
+
+    }
+
+}
+
+
+.n-button  {
+    flex: 2;
+    font-size: 18px;
+    font-weight: bold;
+}
+.n-button  a {
+//    color: $black;
+}
+
+@media screen and (max-width: 735px) {
+    .n-list {
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+    .n-list {
+        display: none;
+    }
+    
+    .n-button {
+        display: none;
+    }
+}

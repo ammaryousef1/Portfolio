@@ -21,11 +21,12 @@ const Intro = () => {
     <div  className='intro'>
         <div className="i-left">
             <div className="i-name">
-                <span>Hy ! I Am </span>
-                <span>Ammar Yousef</span>
-                <span>Frontend Developer With level of experience in web designing and development producting the Quality work</span>
+                <span className='text-black'>Hy ! I Am </span>
+                <span className='text-yellow'>Ammar Yousef</span>
+                <span className='text-gray'>Frontend Developer With level of experience in web designing and development producting the Quality work</span>
             </div>
-            <button className="button i-button" ><a href="/contact" style={{ position: 'relative' , bottom: '3px'}} >Hire me</a></button>
+            <button 
+             className='w-32 p-3 font-semibold text-white rounded-full shadow-lg bg-yellow px-7 shadow-orange'><a href="/contact" style={{ position: 'relative' , bottom: '3px'}} >Hire me</a></button>
             <div className="i-icons">
                 <a href=''>
                    <Image src={github} alt='' />
@@ -36,8 +37,12 @@ const Intro = () => {
             </div>
         </div>
         <div className="i-right">
-            <Image src={Vector1} alt="" />
-            <Image src={Vector2} alt="" />
+            <div className='w-[1000px]'>
+               <Image className='w-[1000px]' src={Vector1} alt="" />
+            </div>
+            <div className='w-[1000px]'>
+               <Image className='w-[1000px]' src={Vector2} alt="" />
+            </div>
             <Image src={boy} alt="" />
             <motion.img
             animate={{ x:100}}
