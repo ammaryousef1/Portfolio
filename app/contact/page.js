@@ -3,9 +3,9 @@ import React from 'react'
 import Contact from '../Component/Contact/Contact'
 import { useForm, ValidationError } from '@formspree/react';
 const page = () => {
-  const [state, handleSubmit] = useForm("xvojgzen");
+  const [state, handleSubmit] = useForm("xbjvyvan");
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      return <p className='text-yellow'>Thanks for joining!</p>;
   }
   return (
     <>
@@ -17,7 +17,7 @@ const page = () => {
       </div>
       <div className='blur'
       style={{top: '20px'}}></div>
-      <form className='flex flex-col items-center justify-center ' action='https://formspree.io/f/xvojgzen' method="POST" onSubmit={handleSubmit}>
+      <form className='flex flex-col items-center justify-center ' action='https://formspree.io/f/xbjvyvan' method="POST" onSubmit={handleSubmit}>
      <input className='w-[400px] border-[3px] border-yellow rounded-lg bg-white p-5 max-w-lg mb-10 ' id="name" type="name"  name="name" placeholder='Name' />
       <ValidationError  prefix="name" field="name" errors={state.errors} />
 
