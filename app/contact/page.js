@@ -35,7 +35,7 @@ const page = () => {
    </div>
    
    <div className='text-center text-black relative top-[310px] '>
-       ammaryousef175@gmail.com
+       ammaryousef172@gmail.com
    </div>
     </>
   )

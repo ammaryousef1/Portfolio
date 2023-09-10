@@ -4,6 +4,7 @@ import SkillsCard from '../Component/skills/SkillsCard'
 import glasses from '../assets/image/glasses.png'
 import heartemoji from '../assets/image/heartemoji.png'
 import humble from '../assets/image/humble (1).png'
+import Link from 'next/link'
 const page = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const page = () => {
             Frontend Developer With level of experience in web designing and development producting the Quality work
         </p>
         <button  className='p-3 px-20 text-white rounded-full shadow-lg bg-yellow shadow-orange'>    
-        CV                    
+        <Link href="/CV">CV</Link>                    
         </button>
     </div>
 
@@ -35,7 +36,7 @@ const page = () => {
     </div>
    </div>
    <div className='text-center text-black relative top-[400px] '>
-       ammaryousef175@gmail.com
+       ammaryousef172@gmail.com
    </div>
    </>
   )

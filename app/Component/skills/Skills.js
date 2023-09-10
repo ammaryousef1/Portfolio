@@ -5,6 +5,7 @@ import glasses from '../../assets/image/glasses.png'
 import heartemoji from '../../assets/image/heartemoji.png'
 import humble from '../../assets/image/humble (1).png'
 import './Skills.scss'
+import Link from 'next/link'
 const Skills = () => {
   return (
     <div className='relative flex skills top-96'>
@@ -15,7 +16,7 @@ const Skills = () => {
                 Frontend Developer With level of experience in web designing and development producting the Quality work
             </p>
             <button  className='p-3 px-20 text-white rounded-full shadow-lg bg-yellow shadow-orange'>    
-            CV                    
+            <Link href="/CV">CV</Link>                                
             </button>
         </div>
 
