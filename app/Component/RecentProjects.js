@@ -12,7 +12,7 @@ const RecentProjects = ({item}) => {
         {
           toggle ? (
           <div  className=' bg-backgroundshadow flex justify-center items-center fixed h-[100%] left-0 top-0 fl w-[100%]'>
-            <div  className='relative p-9 bg-white rounded-xl  '> 
+            <div  className='relative bg-white p-9 rounded-xl '> 
              <div className='flex'>
                 <Image style={{boxShadow: '1px 0px 10px 1px black'}}  className='w-[400px] rounded-xl' src={item.image} alt='' />
                 <div className='absolute left-[445px] top-5'>
@@ -25,7 +25,8 @@ const RecentProjects = ({item}) => {
                   <h1 className='mt-2'>FrameWork: {item.frameWork}</h1>
                   <h1 className='mt-2'>Language:{item.language}</h1>
                   <h1 className='mt-2'>Style:{item.style}</h1>
-                  <h1 className='mt-2'>Database:{item.database}</h1>
+                  <h1 className='mt-2'>{item.database ? <div>database: {item.database}</div> : null }</h1>
+                  <h1 className='mt-2'>{item.Managedata ? <div>Manage data: {item.Managedata}</div> : null }</h1>
               </div>
             </div>
           </div>

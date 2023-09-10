@@ -28,7 +28,7 @@ const Contact = () => {
       <textarea className='w-[400px] border-[3px] border-yellow rounded-lg bg-white p-5 max-w-lg mb-10 '  id="message" name="message" placeholder='Message' />
       <ValidationError prefix="Message"  field="message" errors={state.errors} />
 
-      <button className='w-20 p-3 font-bold text-white rounded-lg bg-yellow' type="submit" disabled={state.submitting}>
+      <button  className='p-3 font-semibold text-white rounded-full shadow-lg bg-yellow px-7 shadow-orange' type="submit" disabled={state.submitting}>
         Send
       </button>
     </form>

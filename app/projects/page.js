@@ -5,6 +5,7 @@ const page = () => {
   return (
    <>
     <div className='my-20 '>
+    <div className='blur' ></div>
          <div className='flex flex-col items-center justify-center mb-10'>
             <h1 className='text-[45px] font-semibold text-black'>Recent Projects</h1>
             <h1 className='text-[45px] font-semibold text-yellow'>Portfolio</h1>

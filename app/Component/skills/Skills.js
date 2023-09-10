@@ -21,15 +21,15 @@ const Skills = () => {
 
         <div className='flex flex-1 SkillsCards absloute '>
             <div className='SkillsCard-1 relative left-[28rem]'>
-                <SkillsCard image={glasses} skills="Html , CSS , Javascript , React , Nextjs" title='Developer'  />
+                <SkillsCard image={glasses} skills="Html  , Javascript , React , Nextjs , Firebase" title='Developer'  />
             </div>
             <div className='blur'></div>
             <div className='SkillsCard-2 relative right-[13rem] top-[12rem]'>
-                <SkillsCard image={heartemoji} skills="Html , CSS , Javascript , React , Nextjs" title='Design' />
+                <SkillsCard image={heartemoji} skills="CSS , SCSS , tailwind , bootstrap " title='Design' />
             </div>
 
             <div className='SkillsCard-3 relative  right-[10rem] top-[23rem]'>
-                <SkillsCard image={humble} skills="Html , CSS , Javascript , React , Nextjs" title='React' />
+                <SkillsCard image={humble} skills="React , Nextjs , Redux ,  " title='React' />
             </div>
 
         </div>

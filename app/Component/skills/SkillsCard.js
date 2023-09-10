@@ -7,8 +7,8 @@ const SkillsCard = ({ image , title , skills}) => {
         <div>
             <Image width={100} src={image}  alt="" />
         </div>
-        <h1>{title}</h1>
-        <h1>{skills}</h1>
+        <h1 className='text-yellow font-bold'>{title}</h1>
+        <h1 className='text-black text-center'>{skills}</h1>
     </div>
   )
 }

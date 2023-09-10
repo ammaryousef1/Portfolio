@@ -13,7 +13,7 @@ import glassesimoji from '../../assets/image/glassesimoji.png'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Linkedin from '../../assets/image/linkedin.png'
 const Intro = () => {
 
   return (
@@ -24,7 +24,7 @@ const Intro = () => {
             <div className="i-name">
                 <span className='text-black'>Hy ! I Am </span>
                 <span className='text-yellow'>Ammar Yousef</span>
-                <span className='text-gray'>Frontend Developer With level of experience in web designing and development producting the Quality work</span>
+                <span className='text-gray'>Frontend Developer With level of experience in web designing  and development  producting the Quality work</span>
             </div>
             <button 
              className='w-32 p-3 font-semibold text-white rounded-full shadow-lg bg-yellow px-7 shadow-orange'>
@@ -36,8 +36,8 @@ const Intro = () => {
                 <a href='https://github.com/ammaryousef1' target='_blank'>
                    <Image src={github} alt='' />
                 </a>
-                <a href='https://www.linkedin.com/in/ammar-yousef-559b51283/' target='__blank' >
-                   {/* <Image src={linkedin} alt='' /> */}
+                <a href='https://www.linkedin.com/in/ammar-yousef-549515290/' target='__blank' >
+                   <Image src={Linkedin} alt='' />
                 </a>
             </div>
         </div>
@@ -98,3 +98,6 @@ const Intro = () => {
 }
 
 export default Intro
+
+
+
