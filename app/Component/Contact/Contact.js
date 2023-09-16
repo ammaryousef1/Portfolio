@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
  
-  const [state, handleSubmit] = useForm("xbjvyvan");
+  const [state, handleSubmit] = useForm("xrgwlkdg");
   if (state.succeeded) {
       return <p className='text-yellow'>Thanks for joining!</p>
   }
@@ -18,7 +18,7 @@ const Contact = () => {
       </div>
       <div className='blur'  
       style={{top: '20px'}}></div>
-      <form className='flex flex-col items-center justify-center ' action='https://formspree.io/f/xbjvyvan' method="POST" onSubmit={handleSubmit}>
+      <form className='flex flex-col items-center justify-center ' action='https://formspree.io/f/xrgwlkdg' method="POST" onSubmit={handleSubmit}>
      <input className='w-[400px] border-[3px] border-yellow rounded-lg bg-white p-5 max-w-lg mb-10 ' id="name" type="name"  name="name" placeholder='Name' />
       <ValidationError  prefix="name" field="name" errors={state.errors} />
 
