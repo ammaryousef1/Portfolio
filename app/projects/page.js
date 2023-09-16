@@ -13,7 +13,7 @@ const page = () => {
        <ProjectPage />
     </div>
     <div className='text-center text-black relative top-[100px] '>
-       ammaryousef172@gmail.com
+       ammaryousef173@gmail.com
    </div>
    </>
   )
