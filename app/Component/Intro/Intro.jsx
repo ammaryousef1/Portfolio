@@ -36,7 +36,7 @@ const Intro = () => {
                 <a href='https://github.com/ammaryousef1' target='_blank'>
                    <Image src={github} alt='' />
                 </a>
-                <a href='https://www.linkedin.com/in/ammar-yousef-549515290/' target='__blank' >
+                <a href='https://www.linkedin.com/in/ammar-yousef-086911291/' target='__blank' >
                    <Image src={Linkedin} alt='' />
                 </a>
             </div>
